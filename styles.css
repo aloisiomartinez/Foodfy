@@ -1,0 +1,24 @@
+@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.align {
+  margin-top: 36.1px;
+}
+
+a.logo{
+  text-decoration: none;
+  margin-left: 231px;
+}
+
+a.link {
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 5px;
+}
