@@ -1,0 +1,23 @@
+{% extends "layoutVisitors.njk" %}
+
+{% block content %}
+
+  <section id="home__banner">
+    <div class="home__banner-text">
+      <h1>As melhores receitas</h1>
+      <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+      </p>
+    </div>
+    <img src="https://github.com/tfstam/bootcamp-launchbase-desafio-02/blob/master/img/chef.png?raw=true" alt="Chef">
+  </section>
+
+  <section id="cards">
+   {% for item in items %}
+      <div class="card" id="{{item.id}}">
+        <img src="{{item.image}}" alt="{{item.title}}">
+        <h1>{{item.title}}</h1>
+        <p>{{item.author}}</p>
+      </div>
+    {% endfor %}
+  <script src="scripts.js"></script>
+{% endblock %}

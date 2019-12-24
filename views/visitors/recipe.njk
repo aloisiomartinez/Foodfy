@@ -1,0 +1,51 @@
+{%extends "layoutVisitors.njk"%}
+
+{%block content%}
+  <section class="cards">
+    <div class="card" id="{{item.id}}">
+      <div class="card-image">
+        <img src="{{item.image}}" alt="{{item.title}}"/>
+      </div>
+      <div class="card-title">
+        <p>Titulo:
+          {{item.title}}</p>
+      </div>
+      <div class="card-author">
+        <p>Autor:
+          {{item.author}}</p>
+      </div>
+      <div class="recipe">
+        <dl class="js">
+          <dt>
+            Ingredientes:
+          </dt>
+           <a class="show onOff">MOSTRAR</a>
+          <a class="hide">ESCONDER</a>
+
+          <dd class="ingredients_list">
+            {% for j in item.ingredients %}
+              <li>{{j}}</li>
+            {% endfor %}
+          </dd>
+          <dt>Modo de Preparo:
+          </dt>
+          <a class="show onOff">MOSTRAR</a>
+          <a class="hide">ESCONDER</a>
+          <dd>
+            {% for k in item.preparation %}
+              {{k}}
+            {% endfor %}
+          </dd>
+          <dt>Informações adicionais:</dt>
+
+          <a class="show onOff">MOSTRAR</a>
+          <a class="hide">ESCONDER</a>
+          <dd>{{item.information}}</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+  
+  <script src="scripts.js"></script>
+  <script src="buttonHide.js"></script>
+  {%endblock%}

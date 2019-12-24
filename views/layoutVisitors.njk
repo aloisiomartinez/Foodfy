@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Foodfy</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="/"><img
+            src="https://github.com/tfstam/bootcamp-launchbase-desafio-02/blob/master/img/logo.png?raw=true"
+            alt="Logo Foodfy"></a>
+      </div>
+      <div class="menu">
+        <a href="/about">Sobre</a>
+        <a href="/revenues">Receitas</a>
+      </div>
+    </header>
+
+    {% block content %}
+    
+    {% endblock %}
+
+    </div>  
+    {% block footer%}
+     <footer>
+        Todos direitos reservados, receitas Foodfy
+    </footer>
+    {% endblock %}
+
+
+
+</body>
+
+</html>

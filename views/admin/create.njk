@@ -1,0 +1,18 @@
+{%extends "layoutAdmin.njk"%}
+
+{% block content%}
+  <form class="card-create" method="POST" action="/admin/recipes/">
+    <div class="create-head">
+      <h1>Criando receita</h1>
+
+      <button>
+        <a type="submit" id="save">Salvar receita</a>
+      </button>
+
+    </div>
+    {% include 'admin/fields.njk' %}
+  </form>
+
+  {% include '../addButton.njk' %}
+
+{% endblock %}

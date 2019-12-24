@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER LAYOUT*/
+
+header {
+  background-color: black;
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 55px;
+}
+
+header .logo {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* CARDS */
+
+.title h1 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 50px;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 250px;
+  margin-top: 50px;
+}
+
+#cards .card-image {
+  display: inline-block;
+}
+
+#cards .card-image img {
+  width: 172px;
+  height: 80px;
+  border-radius: 8.5px;
+}
+
+.card {
+  max-width: 100%;
+}
+
+.card-text {
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.card-text h1 {
+  font-weight: normal;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 4px;
+}
+
+.card-text p {
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 10px;
+}
+
+.card-text a {
+  font-size: 14px;
+  color: #6558c3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.revenues button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  background-color: #6558c3;
+  border-radius: 8px;
+}
+
+.revenues button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* CARD RECEITA */
+.title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.title button {
+  background-color: white;
+  justify-self: end;
+}
+.title button a {
+  background-color: #6558c3;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.receita-image img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  cursor: not-allowed;
+  margin-top: 20px;
+}
+
+.receita-title p {
+  margin-top: 50px;
+  font-size: 36px;
+  line-height: 42px;
+  color: #111111;
+  text-align: center;
+  font-weight: bold;
+}
+
+.receita-author {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #777777;
+  text-align: center;
+}
+
+.recipe {
+  min-height: 203px;
+  margin-top: 30px;
+}
+.recipe dl dt {
+  color: #111;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.recipe dl dd {
+  color: #444;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 40px 0;
+}
+
+.recipe a {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--color-shadeOfGray9);
+  cursor: pointer;
+}
+
+/* HEADER CREATE RECEITA */
+
+.create-title h1 {
+  font-size: 24px;
+}
+
+.create-head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.create-head button {
+  background-color: white;
+  justify-self: end;
+  background-color: #6558c3;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* HEADER EDIT RECEITA */
+
+.edit-head h5 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.edit-head {
+  display: inline;
+}
+
+.edit-head .edit-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.edit-head .button-delete a {
+  background-color: #dc4747;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.edit-head .button-salvar button a {
+  background-color: white;
+  justify-self: end;
+  background-color: #6558c3;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* FIELDS RECEITA */
+
+.fields input,
+textarea {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  color: black;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.fields h1 {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.fields h2 {
+  margin-top: 15px;
+  color: #6558c3;
+  font-size: 16px;
+}
+
+.fields .add-ingredient,
+.add-step {
+  font-size: 16px;
+  background-color: #6558c3;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.fields textarea {
+  height: 250px;
+}

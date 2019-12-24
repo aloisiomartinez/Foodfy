@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --color-main: #111111;
+  --color-pink: #FBDFDB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-main);
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==== MAIN NAV ==== */
+header {
+  margin-top: 36px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 91px 1fr;
+  gap: 122px;
+}
+
+
+
+header .logo img{
+  height: 27px;
+}
+
+header .menu a {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: var(--color-main);
+  font-size: 16px;
+
+  text-decoration: none;
+  padding-right: 20px;
+  transition: 0.4s;
+
+}
+
+.menu a:active {
+  font-weight: bolder;
+  color: var(--color-main);
+}
+
+.menu a:hover{
+  font-weight: bold;
+  color: var(--color-main);
+}
+
+/* ==== HOMEPAGE BANNER ==== */
+#home__banner {
+  background: var(--color-pink);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#home__banner .home__banner-text {
+  margin-top: 117px;
+  margin-bottom: 117px;
+  margin-left: 60px;
+  margin-right: 0;
+  width: 316px;
+}
+
+#home__banner .home__banner-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+
+#home__banner .home__banner-text p {
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+#home__banner img {
+  height: 300px;
+  margin-top: 66px;
+  margin-bottom: 0;
+  margin-left: 200px;
+  margin-right: 100px;
+}
+
+/* ==== CARDS ==== */
+
+
+#cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 20px;
+}
+
+.card img{
+  width: 100%;  
+  border-radius: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card h1{
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-main);  
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+}
+
+
+/* ==== SOBRE  ==== */
+
+.about h1 {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.about p{
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.about h2 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+#started {
+  margin-top: 20px;
+}
+
+.about h3{
+    margin-top: 30px;
+    font-size: 20px;
+}
+#recp {
+  margin-top: 20px;
+}
+
+/* ==== CARDS receitas ==== */
+
+.card-image img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px;
+  border-radius: 15px;
+  cursor: not-allowed;
+}
+
+.card-title p{
+  margin-top: 20px auto 0;
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  color: #111111;
+  text-align: center;
+}
+
+.card-author {
+  margin-top: 5px auto 0;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #777777;
+  text-align: center;
+}
+
+.recipe {
+  min-height: 203px;
+  margin-top: 30px;
+}
+.recipe dl dt {
+  color: #111;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.recipe dl dd {
+  color: #444;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 40px 0;
+
+}
+
+.recipe a {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--color-shadeOfGray9);
+  cursor: pointer;
+}
+
+/* === shown or hidden content */
+.hidden {
+  display: none;
+}
+.onOff {
+  display: none;
+}
+
+/* === FOOTER === */
+footer {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  background-color: #EEEEEE;
+  padding: 20px;
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+}
+
+
+

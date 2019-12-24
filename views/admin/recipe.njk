@@ -1,0 +1,60 @@
+{%extends "layoutAdmin.njk"%}
+
+{%block content%}
+
+  <div class="title-head">
+    <div class="title">
+      <h5>
+        Receita:{{ item.title }}
+      </h5>
+      <button>
+        <a href="/admin/recipes/{{item.id}}/edit">Editar receita</a>
+      </button>
+    </div>
+  </div>
+
+  <section class="receitas">
+
+    <div class="receita" id="{{item.id}}">
+      <div class="receita-image">
+        <img src="{{item.image}}" alt="{{item.title}}"/>
+      </div>
+      <div class="receita-title">
+        <p>{{item.title}}</p>
+      </div>
+      <div class="receita-author">
+        <p>por
+          {{item.author}}</p>
+      </div>
+      <div class="recipe">
+        <dl class="js">
+          <dt>
+            Ingredientes:
+          </dt>
+          <a class="show onOff">MOSTRAR</a>
+          <a class="hide">ESCONDER</a>
+
+          <dd class="recipe-ingredients">
+            {% for j in item.ingredients %}
+              <li>{{j}}</li>
+            {% endfor %}
+          </dd>
+          <dt>Modo de Preparo:
+          </dt>
+          <dd class="recipe-preparation">
+            {% for k in item.preparation %}
+            <li> {{k}} </li>
+            {% endfor %}
+          </dd>
+          <dt>Informações adicionais:
+          </dt>
+          <dd>{{item.information}}</dd>
+        </dl>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="scripts.js"></script>
+  <script src="buttonHide.js"></script>
+  {%endblock%}
